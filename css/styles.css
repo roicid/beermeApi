@@ -1,0 +1,33 @@
+.navfont {
+
+    font-family: fantasy;
+    color: white; 
+}
+
+
+footer {
+    display: block;
+    background-color:lightseagreen;
+    color: white; 
+  }
+
+  .carousel {
+    height: 200px;
+    overflow: hidden;
+  }
+  .btn {
+    margin:60px ; 
+  }
+ 
+  .espacio {
+
+height: 100px;
+  }
+
+  .egt {
+      padding: 30px; 
+      justify-content: center ;
+      color: blue;
+      margin: 30px; 
+      text-align: center;
+  }
