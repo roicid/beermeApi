@@ -1,3 +1,8 @@
+* {
+ cursor: url(http://cur.cursors-4u.net/food/foo-2/foo108.cur), auto !important;
+
+}
+
 .navfont {
 
     font-family: fantasy;
@@ -9,10 +14,11 @@ footer {
     display: block;
     background-color:lightseagreen;
     color: white; 
+    padding-top: 40px;
   }
 
   .carousel {
-    height: 200px;
+    height: 250px;
     overflow: hidden;
   }
   .btn {
@@ -30,4 +36,11 @@ height: 100px;
       color: blue;
       margin: 30px; 
       text-align: center;
+  }
+
+  .signup {
+         
+      border-radius: 50%;
+      border-color: darkslategray;
+
   }

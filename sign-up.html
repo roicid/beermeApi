@@ -53,21 +53,21 @@
       <main class="main-forms">
         <section>
     
-          <h2>Regístrate!</h2>
+          <h2 class="text-center btn-group-sm">Regístrate!</h2>
     
           <div class="form-wrapper">
     
-            <form class="signup-form" id="signup-form" action="">
-    
-              <input type="text" id="name" placeholder="Nombre" autocomplete="off" required />
-              <input type="email" id="email" placeholder="Email" autocomplete="off" required />
-              <input type="text" id="phone" placeholder="Teléfono" autocomplete="off" required />
-              <input type="password" id="password" placeholder="******" autocomplete="off" required />
-              <input type="password" id="repeat-password" placeholder="******" autocomplete="off" required />
-    
+            <form id= "formBeer" class="signup-form" id="signup-form" action="" novalidate>
+              
+              <input  id="name" placeholder="Nombre" autocomplete="off" required />
+              <input  type="email" id="email" placeholder="Email" autocomplete="off" required />
+              
+              <input  type="password" id="password" placeholder="******" autocomplete="off" required />
+              <input  type="password" id="repeat-password" placeholder="******" autocomplete="off" required />
+            
               <button type="submit" class="button" id="signup-button" >Registrar</button>
             </form>
-    
+          </div>
             <div class="errors-container"></div>
           </div>
     
@@ -84,9 +84,11 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-      <script src="./multimedia/users.js"></script>
-
-    <footer class="text-center ">
+      <script src="./userbeer.js"></script>
+      <script src="validatobeer.js"></script>
+      <script src="signupbeer.js"></script>
+      
+    <footer class="text-center embed-responsive">
         <p>Posted by: Roi Cid </p>
         <p>Contact information: <a href="beerme@gmail.com">
         beerme@gmail.com</a>.</p>
