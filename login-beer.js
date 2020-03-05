@@ -10,12 +10,10 @@ buttonLog.addEventListener("click", function (evento) {
     evento.preventDefault();
     //deleteErrors();
   
-let usuarioActual = new Validaciones
-usuarioActual.email = logMail.value
-usuarioActual.password = logPass.value
+let usuarioActual = new Validaciones(logMail.value ,logPass.value)
+
 
     if (usuarioActual.checkEmailInDB()){
-        localStorage.setItem("currentUser", JSON.stringify(user))
                 window.location.href = "index.html"
     }else{
      let newp =  document.createElement("p")
@@ -53,8 +51,9 @@ class Validaciones {
             usersDB.forEach(user => {
                 if (user.email === this.email && user.password === this.password) {
                     userInDB = true;
+                    localStorage.setItem("currentUser", JSON.stringify(user))
                 }
-               // localStorage.setItem("currentUser", JSON.stringify(user))
+               // 
                // window.location.href = "index.html"
             });
 

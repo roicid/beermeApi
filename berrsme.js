@@ -1,6 +1,7 @@
 var input = document.querySelector(".cityfilter")
 var button = document.querySelector(".citybutton")
 
+
   function callcity() {
     var city = input.value
 
