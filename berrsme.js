@@ -29,7 +29,7 @@ var button = document.querySelector(".citybutton")
           
 
 button.addEventListener("click", (event) =>{
-  event.preventDefault()
+  event.preventDefault()  // parar el efecto por defecto  del boton , 
   callcity()
 } )
 
