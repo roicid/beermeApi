@@ -41,6 +41,13 @@ footer {
       text-align: center;
   }
 
+  .lista-centro {
+
+      display: flex;
+      justify-content: space-around; 
+
+
+  }
   .signup {
          
       border-radius: 50%;
@@ -49,6 +56,10 @@ footer {
   }
   .welcome  {
     animation:tracking-in-expand-fwd-top 1s cubic-bezier(.215,.61,.355,1.000) 2s both
+  }
+
+  .first_section {
+margin: 0px 40px;
   }
   
   .beerme{animation:text-flicker-in-glow 4s linear both}
