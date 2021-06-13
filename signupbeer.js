@@ -18,6 +18,7 @@ signupBotton.addEventListener("click", function(evento) {
     if (checkValidUser()){
         
         createUser(userName.value,email.value,password.value)
+      
         window.location.href="index.html"
     }
 })
@@ -29,11 +30,11 @@ function checkValidUser(){
          let usersDB =  JSON.parse(localStorage.getItem("users"));
          let validUser = true ; 
          if (!signupValidator.checkUsername()){
-             signupValidator.errorCreator("por favor introduzca un user name valido", userName);
+             signupValidator.errorCreator("por favor introduzca un username valido", userName);
              validUser = false ;
              
          } if (!signupValidator.checkEmail()){
-             signupValidator.errorCreator("por favor intruduzca un mail vaildo ! sin caracteres especiales" , email )
+             signupValidator.errorCreator("por favor intruduzca un mail vaildo! " , email )
              validUser = false ;
          }if (!signupValidator.checkPassword()){
              signupValidator.errorCreator("por favor introduzca un password mayor a 6 caracteres",password)
@@ -59,6 +60,7 @@ function checkValidUser(){
             const newUser = new User (name , email ,password)
             if (usersDB) {
                 usersDB.push( newUser)
+                
             }
             else {
                 usersDB = [newUser];

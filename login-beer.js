@@ -16,8 +16,9 @@ let usuarioActual = new Validaciones(logMail.value ,logPass.value)
     if (usuarioActual.checkEmailInDB()){
                 window.location.href = "index.html"
     }else{
-     let newp =  document.createElement("p")
-     newp.innerHTML= " PLS SIGN UP BEFORE LOG IN "
+     let newp =  document.createElement("h5")
+     
+     newp.innerHTML= " Please Sign Up "
      mensajerror.appendChild(newp)
     }
 
@@ -61,7 +62,8 @@ class Validaciones {
         return userInDB
     }
 
-}  // hago una variable para traeerme el usuario actual en el js linkeado al index,  si hay un usuario actual mostrar el name 
+}  
+// hago una variable para traeerme el usuario actual en el js linkeado al index,  si hay un usuario actual mostrar el name 
 // si hay algo loguear el stirng + name .  
 // almacenar en variables los inputs de nuestros html 
 

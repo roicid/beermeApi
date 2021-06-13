@@ -25,7 +25,7 @@
 
 <body>
     <nav class=" navbar navbar-expand-lg navbar-light p-5 mb-2 bg-info" >
-      <a class="navbar-brand text-white font size" href="#"> Beerme </a>
+      <a class="navbar-brand text-white font size" href="/index.html"> Beerme </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -41,7 +41,7 @@
             <a class="nav-link" href="sign-up.html">Sign Up</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="Showbeers.html"> Searcher Beers</a>
+            <a class="nav-link" href="Showbeers.html"> Search Beers</a>
           </li>
           
         </ul>
@@ -52,17 +52,18 @@
 
     
       <!-- form -->
+      
       <section class="first_section">
-    <h1>    Log in if you are already a user </h1>
+    <h1 class="log-in-msj"> Please Log in if you are already a user </h1>
       <form >
         <div class="form-group">
           <label for="exampleInputEmail1">Email address</label>
-          <input type="email" class="form-control" id="inputmail" aria-describedby="emailHelp">
+          <input type="email" class="form-control" required  id="inputmail" aria-describedby="emailHelp">
           <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
         <div class="form-group">
           <label for="exampleInputPassword1">Password</label>
-          <input type="password" class="form-control" id="inputpass">
+          <input type="password"  required class="form-control" id="inputpass">
         </div>
         <div class="form-group form-check">
           <input type="checkbox" class="form-check-input">
@@ -70,10 +71,14 @@
         </div>
       </section>
 
-        <div id="mensajerror"></div>
+       
 
         <button type="submit" class="btn btn-primary"  id="buttoninput">Submit</button>
       </form>
+      <div id="mensajerror"></div>
+      
+        </div>
+    
 <!-- img -->
             
 

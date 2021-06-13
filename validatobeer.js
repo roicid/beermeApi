@@ -6,7 +6,7 @@ this.userName = userName
 this.email = email
 this.password = password 
 
-    
+
 }
 
 checkUsername ()  {
@@ -30,7 +30,7 @@ errorCreator(message , location ) {
      let div = document.createElement("div");
      div.setAttribute("class" , "error")
      div.innerHTML= message;
-     form.insertBefore(div , location )
+     form.append(div , location )
 
 }   
 deleteErrors(){

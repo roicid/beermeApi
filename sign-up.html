@@ -23,7 +23,7 @@
 
   <body>
     <nav class=" navbar navbar-expand-lg navbar-light p-5 mb-2 bg-info" >
-      <a class="navbar-brand text-white font size" href="#"> Beerme </a>
+      <a class="navbar-brand text-white font size" href="index.html"> Beerme </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -50,7 +50,49 @@
 
   </body>
 
+  <section class="first_section">
+  
+    <h1 class="log-in-msj">   Sign up </h1>
+      <form id="formBeer" >
+        <div class="form-group">
+          <label for="exampleInputname">Name</label>
+          <input type="name" class="form-control" id="name" aria-describedby="emailHelp" required>
+          <div class="valid-feedback"> Ok Valid</div> 
+          <div class="invalid-feedback"> Please inster your name</div>
+          <small id="emailHelp" class="form-text text-muted">Please enter your name</small>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
+          <div class="valid-feedback"> Ok Valid</div> 
+          <div class="invalid-feedback"> Please inster your name</div>
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="password" autocomplete="new-password" required>
+          <small id="emailHelp" class="form-text text-muted">Must contain min 6-10 Digits</small>
+          
+          <div class="valid-feedback"> Ok Valid </div> 
+          <div class="invalid-feedback"> must contain min 6 digits </div>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="repeat-password" autocomplete="new-password" required>
+          <div class="valid-feedback"> Ok Valid </div> 
+          <div class="invalid-feedback"> must contain min 6 digits </div>
+        </div>
+
+        
+      </section>
+
+        <div id="mensajerror"></div>
+
+        <button type="submit" class="btn btn-primary"  id="signup-button">Submit</button>
+      </form>
+    </div>
+
       <!-- form -->
+      <!--
       <main class="main-forms">
         <section>
     
@@ -72,6 +114,7 @@
             <div class="errors-container"></div>
           </div>
         </section>
+        -->
     
 <!-- img -->
 
@@ -90,7 +133,7 @@
       <script src="validatobeer.js"></script>
       <script src="signupbeer.js"></script>
       
-    <footer class="text-center embed-responsive">
+    <footer class="text-center">
         <p>Posted by: Roi Cid </p>
         <p>Contact information: <a href="beerme@gmail.com">
         beerme@gmail.com</a>.</p>
